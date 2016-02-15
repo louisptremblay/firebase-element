@@ -88,9 +88,7 @@ document.
 
     _computeQuery: function(location) {
       if (!location) {
-        this.data = null; // modifs louis
-        
-        return;
+        return null;
       }
 
       return new Firebase(location);
