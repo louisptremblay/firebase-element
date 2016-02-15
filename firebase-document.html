@@ -97,6 +97,8 @@ document.
     },
 
     _updateRemoteDocument: function() {
+      if (!query) return;
+        
       this._log('Updating remote document');
       this.query.update(this.dataAsObject);
     },
